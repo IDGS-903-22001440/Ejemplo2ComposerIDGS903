@@ -64,7 +64,7 @@ fun PantallaInicio(navController: NavHostController){
         )
         Spacer(modifier = Modifier.height(16.dp))
         Button(onClick = {
-            val nombre = nombre.ifBlank { "Cardiel" }
+            val nombre = nombre.ifBlank { "Ian" }
             navController.navigate("detalle/$nombre")
         }) {
             Text("Ir a Detalle con nombre")
